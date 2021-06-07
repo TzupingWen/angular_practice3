@@ -1,0 +1,86 @@
+.booking-intro h3 {
+  font-size: 20px;
+}
+
+.car-list {
+  display: flex;
+  border: 1px solid rgb(221, 221, 221);
+  margin-bottom: 15px;
+}
+
+.car-listpict {
+  width: 230px;
+  padding: 10px;
+}
+
+.car-listpict img {
+  width: 200px;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.car-listintro {
+  display: flex;
+}
+
+.car-listintroinner {
+  padding: 10px;
+  width: 65%;
+}
+
+.car-name a {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.car-name a:hover {
+  color: rgb(92, 124, 251);
+}
+
+.car-description {
+  color: rgb(51, 51, 51);
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 auto;
+}
+
+.car-list-last {
+  margin: 0 auto;
+  padding: 20px;
+  border-left: 1px solid rgb(221, 221, 221);
+  line-height: 32px;
+}
+
+.startingfrom {
+  font-size: 20px;
+}
+
+.starting-price {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.viewdetail {
+  display: block;
+  margin-top: 10px;
+}
+
+.viewdetail-btn {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 5px 15px;
+  background-color: rgb(0, 133, 178);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.viewdetail-btn:hover {
+  background-color: rgb(0, 87, 116);
+  color: rgb(87, 120, 252);
+}

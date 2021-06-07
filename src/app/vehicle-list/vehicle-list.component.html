@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="content">
+        <h1>車輛資料列表</h1>
+        <div>
+            <table class="vlist-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>車號</th>
+                        <th>日期</th>
+                        <th>時間</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of list; index as i">
+                        <td>{{i + 1}}</td>
+                        <td>{{item.PlateNumb}}</td>
+                        <!-- 製作民國年轉換的pipe -->
+                        <td>{{item.UpdateTime | taiwanDate}}</td>
+                        <!-- 時間格式後面加上a，讓它自動判斷am或pm -->
+                        <td>{{item.UpdateTime | date:'hh:mm:ss a'}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 原來的日期轉換：{{item.UpdateTime | date:'yyyy-MM-dd'}} -->
+<!-- 轉換成民國年，用自訂的pipe -->
+<!-- ng generate pipe [名稱][參數]：ng generate pipe vehicle-list/taiwan-date -->
+<!-- 在taiwan-date.pipe.ts中設定 -->

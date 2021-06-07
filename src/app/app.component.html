@@ -1,0 +1,63 @@
+<!-- header -->
+<header class="main-header d-flex">
+  <div class="brand d-flex">
+    <a href="/" rel="">
+      <img class="logo" src="" alt="">
+    </a>
+    <div class="name-logo">
+      <h3><a class="company-name" href="/">旅遊租車公司</a></h3>
+      <p style="color: white;">Car Rental Service</p>
+    </div>
+  </div>
+  <div class="rightside">
+    <nav class="navbar">
+      <ul class="d-flex">
+        <li><a routerLink="/" routerLinkActive="active">主頁</a></li>
+        <li><a routerLink="/service" routerLinkActive="active">服務範圍</a>
+        </li>
+        <li><a routerLink="/vehicles" routerLinkActive="active">車輛</a></li>
+        <li><a routerLink="/shopping" routerLinkActive="active">購物</a>
+          <ul class="submenu">
+            <li routerLink="/cart" routerLinkActive="active">購物車</li>
+          </ul>
+        </li>
+        <li><a routerLink="/booking" routerLinkActive="active">租車</a></li>
+        <li><a routerLink="/contactus" routerLinkActive="active">聯絡我們</a></li>
+        <li><a routerLink="/" routerLinkActive="active">中文</a></li>
+        <li>|</li>
+        <li>
+          <button class="btn-search">
+            <i class="fas fa-search"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- main content -->
+<router-outlet></router-outlet>
+
+<!-- footer -->
+<div class="footer">
+  <div class="footer-content1">
+    <div class="footer-container1">
+      <h3 class="footer-title">聯絡方式</h3>
+      <div>
+        <p class="footer-text">
+          Phone No.<br>
+          　 - <br>
+          WhatsApps<br>
+          　 - WhatsApp No : <br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content2">
+    <div class="footer-container2">
+      <div class="footer-info">
+        © Copyright 2021 旅遊租車公司.
+      </div>
+    </div>
+  </div>
+</div>

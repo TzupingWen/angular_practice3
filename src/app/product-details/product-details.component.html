@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="content">
+        <main>
+            <div class="detail-main">
+                <div class="product-pict">
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+                <div class="product-summary">
+                    <div *ngIf="product">
+                        <h1>{{product.name}}</h1>
+                        <h4>{{product.price|currency}}</h4>
+                        <p>{{product.description}}</p>
+                        <p>{{product.description_en}}</p>
+                    </div>
+                    <a (click)="addToCart(product)" routerLink="/cart" class="button addtocart-btn">加入購物車</a>
+                </div>
+            </div>
+            
+            <div class="product-tabs">
+                <ul>
+                    <li><a href="">商品說明</a></li>
+                </ul>
+                <div class="product-tabs-content"> 
+                    <h2>商品說明</h2>
+                    <p>此商品需議價。詳細內容請到 聯絡我們 中留言，客服將盡快與您聯繫。</p>
+                    <p>This product needs to be negotiated. For details, please leave a message in Contact Us, and the customer service will get back to you.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>

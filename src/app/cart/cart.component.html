@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="content">
+        <h1>購物車</h1>
+        <div class="cart-intro">
+            <table class="cart-table"
+            *ngIf="items.length > 0">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>商品</th>
+                        <th>價格</th>
+                        <th>數量</th>
+                        <th>小計</th>
+                    </tr>
+                </thead>
+                <tbody class="cart-tbody">
+                    <tr *ngFor="let item of items; index as i">
+                        <td>
+                            <a class="remove" (click)="remove(i)">×</a>
+                        </td>
+                        <td>
+                            <img src="../../assets/images/monthly.jpg" alt="">
+                        </td>
+                        <td>{{item.name}}</td>
+                        <td>
+                            {{item.price | currency}}
+                        </td>
+                        <td>
+                            <input type="number" step="1" min="0" max="10" value="1" 
+                            [(ngModel)]="qty">
+                        </td>
+                        <td>{{item.price * qty | currency}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="cart_empty" *ngIf="items.length === 0">
+                <h2>購物車是空的!</h2>
+            </div>
+            <div class="cart-calculate">
+                <div class="cart-total">
+                    <h3>購物車總計</h3>
+                    <table class="cart-total-table">
+                        <tbody>
+                            <tr>
+                                <th>總計</th>
+                                <td> {{totalPrice | currency}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="proceedto-checkout">
+                        <a href="">前往結帳</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div>
+                <h2>test</h2>
+                <input type="number" [(ngModel)]="x"> x
+                <input type="number" [(ngModel)]="y"> 
+                <button style="color: rgb(31, 31, 31);" (click)="calculate()">
+                    =
+                </button>{{result}}
+            </div> -->
+        </div>
+    </div>
+</div>

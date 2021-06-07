@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="content">
+        <h1>購物</h1>
+        <div class="shopping-content">
+            <div class="shopping-intro" *ngFor="let product of products; index as productId">
+                <div class="product-intro">
+                    <img src="" alt="">
+                    <h2>
+                        <a [title]="product.name" [routerLink]="['/products', product.id]">
+                            {{product.name}}
+                        </a>
+                    </h2>
+                    <span>${{product.price}}</span>
+                    <!-- <a (click)="addToCart(product)" routerLink="/cart" class="button addtocart-btn">加入購物車</a> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

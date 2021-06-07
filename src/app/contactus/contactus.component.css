@@ -1,0 +1,48 @@
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label,
+span {
+  font-size: 20px;
+  line-height: 32px;
+  color: rgb(51, 51, 51);
+}
+
+.form-control {
+  width: 360px;
+  height: 50px;
+  color: rgb(138, 147, 167);
+  border: 1px solid rgb(230, 231, 238);
+  border-radius: 5px;
+  padding: 10px 15px;
+  outline: none;
+}
+
+textarea {
+  width: 400px;
+  height: 120px;
+  border: 1px solid rgb(230, 231, 238);
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+}
+
+#c-submit {
+  width: 100px;
+  height: 50px;
+  background: rgb(92, 124, 251);
+  color: rgb(255, 255, 255);
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid rgb(92, 124, 251);
+  border-radius: 100px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#c-submit:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(92, 124, 251);
+}

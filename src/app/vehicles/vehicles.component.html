@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="content">
+        <h1>車輛</h1>
+        <div class="vehicles-intro">
+            <div *ngFor="let car of cars">
+                <figure>
+                    <img src="" alt="">
+                </figure>
+                <p [title]="car.name">{{car.name}}</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>

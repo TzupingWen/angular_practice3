@@ -1,0 +1,90 @@
+/* Global Styles */
+
+* {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* 參考用的基準線 */
+  /* border: 1px solid rgb(0, 89, 255); */
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 150px auto 0 auto;
+  padding: 0 15px;
+}
+
+.content {
+  display: block;
+  padding: 0 0 80px;
+}
+
+.content h1 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 45px;
+  color: rgb(20, 20, 20);
+}
+
+/* Hyperlink */
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* a:hover {
+  opacity: 0.8;
+} */
+
+/* Input */
+
+input {
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #bdbdbd;
+}
+
+/* Button */
+.button,
+button {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.button:hover,
+button:hover {
+  opacity: 0.7;
+  font-weight: normal;
+}
+
+.button:disabled,
+button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+/* Fancy Button */
+
+.fancy-button {
+  background-color: white;
+  color: #1976d2;
+}
+
+.fancy-button i.material-icons {
+  color: #1976d2;
+  padding-right: 4px;
+}
