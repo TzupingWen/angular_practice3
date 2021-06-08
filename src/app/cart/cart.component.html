@@ -22,15 +22,15 @@
                         <td>
                             <img src="../../assets/images/monthly.jpg" alt="">
                         </td>
-                        <td>{{item.name}}</td>
+                        <td>{{item.product.name}}</td>
                         <td>
-                            {{item.price | currency}}
+                            {{item.product.price | currency}}
                         </td>
                         <td>
                             <input type="number" step="1" min="0" max="10" value="1" 
-                            [(ngModel)]="qty">
+                            [(ngModel)]="item.qty">
                         </td>
-                        <td>{{item.price * qty | currency}}</td>
+                        <td>{{item.product.price * item.qty | currency}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -44,7 +44,7 @@
                         <tbody>
                             <tr>
                                 <th>總計</th>
-                                <td> {{totalPrice | currency}}</td>
+                                <td> {{computedTotal | currency}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -53,15 +53,7 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div>
-                <h2>test</h2>
-                <input type="number" [(ngModel)]="x"> x
-                <input type="number" [(ngModel)]="y"> 
-                <button style="color: rgb(31, 31, 31);" (click)="calculate()">
-                    =
-                </button>{{result}}
-            </div> -->
+            
         </div>
     </div>
 </div>
