@@ -4,10 +4,15 @@ import { RouterModule } from '@angular/router';
 // 匯入FormsModule用雙向繫結接收input的輸入值
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+<<<<<<< Updated upstream
+import { HttpClientModule } from '@angular/common/http';
+
+=======
 // 使用HttpClient
 import { HttpClientModule } from '@angular/common/http';
 
 
+>>>>>>> Stashed changes
 // 設定路由
 import { AppRoutingModule, routingComponent } from'./app-routing.module';
 
@@ -22,14 +27,22 @@ import { BookingComponent } from './booking';
 import { ContactusComponent } from './contactus';
 import { ProductDetailsComponent } from './product-details';
 import { CartService } from './cart.service';
+<<<<<<< Updated upstream
+// pipe試作
+import { TaiwanDatePipe } from './vehicle-list/taiwan-date.pipe';
+=======
 // api
 import { VehicleapiComponent } from './vehicleapi';
+>>>>>>> Stashed changes
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
+<<<<<<< Updated upstream
+=======
     // HttpClientModule放BrowerModule後
+>>>>>>> Stashed changes
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
@@ -42,7 +55,10 @@ import { VehicleapiComponent } from './vehicleapi';
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'booking', component: BookingComponent },
       { path: 'contactus', component: ContactusComponent},
+<<<<<<< Updated upstream
+=======
       { path: 'vehicleapi', component: VehicleapiComponent },
+>>>>>>> Stashed changes
 
       // otherwise redirect to home
       { path:'**', redirectTo:'' }
@@ -59,7 +75,11 @@ import { VehicleapiComponent } from './vehicleapi';
     ContactusComponent,
     ProductDetailsComponent,
     CartComponent,
+<<<<<<< Updated upstream
+    TaiwanDatePipe
+=======
     VehicleapiComponent
+>>>>>>> Stashed changes
   ],
   bootstrap: [AppComponent],
   providers: [CartService]
